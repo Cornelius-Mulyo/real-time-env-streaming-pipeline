@@ -1,2 +1,2 @@
 # real-time-env-streaming-pipeline
-Apache Cassandra setup with a dummy NoSQL dataset. Project covers keyspace definition, table creation, data insertion, and executing CQL queries. Includes Python connection via cassandra-driver and a 1–2 minute demo video showing end-to-end database interaction.
+A real-time data pipeline that streams simulated water-quality sensor data through Kafka, processes it with Spark Structured Streaming, schedules workflows in Airflow, and stores results in PostgreSQL. Everything runs in Docker for an easy, reproducible setup.
