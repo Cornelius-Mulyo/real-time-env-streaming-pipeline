@@ -1,10 +1,14 @@
-FROM python:3.11-slim
+FROM apache/spark:3.5.1
 
+USER root
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# Download Postgres JDBC driver into Spark's jars dir
+RUN mkdir -p /opt/spark/jars && \
+    curl -L -o /opt/spark/jars/postgresql-42.7.3.jar \
+    https://jdbc.postgresql.org/download/postgresql-42.7.3.jar
 
-COPY producer.py .
+COPY streaming_job.py /app/streaming_job.py
 
-CMD ["python", "producer.py"]
+# optional: keep root since we set user: "0:0" in compose
+USER 0
