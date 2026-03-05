@@ -158,9 +158,13 @@ Example screenshots to include in the repository:
 Example folder structure:
 
 screenshots/
-    containers-running.png
-    spark-streaming-logs.png
-    postgres-query-results.png
+
+
+<img width="1920" height="944" alt="streaming-pipeline2" src="https://github.com/user-attachments/assets/b4c51a32-ef29-41bd-a3e5-9e636792bba2" />
+<img width="1920" height="1014" alt="streaming-pipeline3" src="https://github.com/user-attachments/assets/07d94404-1840-4610-ab42-a91c445172ac" />
+<img width="1920" height="1035" alt="streaming-pipeline4" src="https://github.com/user-attachments/assets/64ab8d73-2848-49b6-a1a5-4973a411d4f6" />
+<img width="1909" height="994" alt="streaming-pipeline5" src="https://github.com/user-attachments/assets/35df4a0b-47bc-4d28-b323-427af28e22ba" />
+<img width="1920" height="1011" alt="streaming-pipeline1" src="https://github.com/user-attachments/assets/fbdf2114-410a-4b33-aa81-5090dc70d597" />
 
 ---
 
@@ -175,3 +179,4 @@ This project demonstrates several important data engineering concepts:
 - Data pipeline orchestration
 
 - SQL-based analytics
+
