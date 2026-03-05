@@ -133,20 +133,6 @@ GROUP BY location;
 
 ---
 
-### Average temperature
-
-SELECT AVG(temperature) FROM sensor_readings;
-
----
-
-### Detect abnormal pH values
-
-SELECT *
-FROM sensor_readings
-WHERE ph < 6.5 OR ph > 8.5;
-
----
-
 ## Example Analytics
 
 The pipeline enables real-time environmental monitoring such as:
@@ -187,4 +173,5 @@ This project demonstrates several important data engineering concepts:
 - Micro-batch stream processing
 - Containerized distributed systems
 - Data pipeline orchestration
+
 - SQL-based analytics
